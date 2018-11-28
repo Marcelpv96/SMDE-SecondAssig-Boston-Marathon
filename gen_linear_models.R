@@ -1,6 +1,6 @@
 # Generate the model which will be used in FlexSim
 
 
-c
+first_segment <- read.csv(file="5K.csv", header=TRUE, sep=",")
 
-#lr_1=lm(`1500m` ~ ., data=decathlon)
+
