@@ -1,14 +1,14 @@
 # Generate the model which will be used in FlexSim
 
 
-first_segment <- read.csv(file="segments/5K.csv", header=TRUE, sep=",")
-second_segment <- read.csv(file="segments/10K.csv", header=TRUE, sep=",")
-third_segment <- read.csv(file="segments/15K.csv", header=TRUE, sep=",")
-fourth_segment <- read.csv(file="segments/20K.csv", header=TRUE, sep=",")
-fifth_segment <- read.csv(file="segments/25K.csv", header=TRUE, sep=",")
-sixth_segment <- read.csv(file="segments/30K.csv", header=TRUE, sep=",")
-seventh_segment <- read.csv(file="segments/35K.csv", header=TRUE, sep=",")
-eigth_segment <- read.csv(file="segments/40K.csv", header=TRUE, sep=",")
+first_segment <- read.csv(file="5K.csv", header=TRUE, sep=",")
+second_segment <- read.csv(file="10K.csv", header=TRUE, sep=",")
+third_segment <- read.csv(file="15K.csv", header=TRUE, sep=",")
+fourth_segment <- read.csv(file="20K.csv", header=TRUE, sep=",")
+fifth_segment <- read.csv(file="25K.csv", header=TRUE, sep=",")
+sixth_segment <- read.csv(file="30K.csv", header=TRUE, sep=",")
+seventh_segment <- read.csv(file="35K.csv", header=TRUE, sep=",")
+eigth_segment <- read.csv(file="40K.csv", header=TRUE, sep=",")
 
 
 
@@ -29,5 +29,5 @@ summary(lr_6_Seg)
 lr_7_Seg=lm(arrival_time ~ temperature + Age + Elevation, data=seventh_segment)
 summary(lr_7_Seg)
 lr_8_Seg=lm(arrival_time ~ temperature + Age + Elevation, data=eigth_segment)
-
+summary(lr_8_Seg)
 
